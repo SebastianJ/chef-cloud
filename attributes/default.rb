@@ -1,3 +1,3 @@
-default['cloud']['disable_root']         =   true
-default['cloud']['preserve_hostname']    =   true
-default['cloud']['manage_etc_hosts']     =   false
+default[:cloud_cfg][:disable_root]         =   true
+default[:cloud_cfg][:preserve_hostname]    =   true
+default[:cloud_cfg][:manage_etc_hosts]     =   false
