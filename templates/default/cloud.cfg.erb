@@ -9,13 +9,13 @@ users:
 
 # If this is set, 'root' will not be able to ssh in and they
 # will get a message to login instead as the default $user
-disable_root: <%= node['cloud']['disable_root'] %>
+disable_root: <%= @disable_root %>
 
 # This will cause the set+update hostname module to not operate (if true)
-preserve_hostname: <%= node['cloud']['preserve_hostname'] %>
+preserve_hostname: <%= @preserve_hostname %>
 
 # This will cause the update_etc_hosts module to not operate (if false)
-manage_etc_hosts: <%= node['cloud']['manage_etc_hosts'] %>
+manage_etc_hosts: <%= @manage_etc_hosts %>
 
 # Example datasource config
 # datasource:
