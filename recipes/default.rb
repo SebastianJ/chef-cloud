@@ -9,4 +9,6 @@ template "/etc/cloud/cloud.cfg" do
     preserve_hostname: node[:cloud_cfg][:preserve_hostname],
     manage_etc_hosts:  node[:cloud_cfg][:manage_etc_hosts]
   )
+  
+  only_if { ::File.exists?("/etc/cloud") }
 end
